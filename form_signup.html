@@ -37,6 +37,44 @@
                      width:140px;
                      height: 40px;
                  }   
+                 #choic{
+                     background-color : pink;
+                     border: 2px solid white;
+                    
+                 }
+                 #cho{
+                     color : silver;
+                 }
+                 #accountbox223{
+                     width:230px;
+                     height: 40px;
+                 }   
+                 #selectbox11{
+                    width:230px;
+                    height: 40px;
+                 }
+                 #buttone_num{
+                     width:200px;
+                     height: 45px;
+                     background-color: greenyellow;
+                 }   
+                 #accountboxs{
+                     width:275px;
+                     height: 40px;
+                 }   
+
+                 #natno{
+                    width:480px;
+                     height: 40px;
+                 }
+
+                 #buttone_go{
+                    width:480px;
+                     height: 40px;
+                     background-color: palevioletred;
+                 }
+
+                 
                
                  
                 </style>
@@ -108,6 +146,35 @@
                                         <option>30</option>
                                         <option>31</option>    
                                     </select>
+                                    <br/>
+                                    <br/>
+                                    <b id=align1>성별</b><br/><br/>
+                                    <input id choice type="radio" name="bt1"> <a>남</a>
+                                    <input id choice type="radio" name="bt1"> <a>여</a>
+                                    <input id choice type="radio" name="bt1"> <a>기타</a>
+                                    <br/><br/>
+                                    <b>본인 확인 이메일</b><a id=cho>(선택)</a><br/><br/>
+                                    <input id=accountbox223 type="text" placeholder="example.id"> <a>@ </a>
+                                    <select id=selectbox11>
+                                        <option>naver.com</option>
+                                        <option>gmail.com</option>
+                                        <option>yahoo.co.kr</option>
+                                        <option>kaywon.ac.kr</option>
+                                    </select><br/><br/>
+                                    <b>휴대전화</b><br><br>
+                                    <select id=natno><br/>
+                                            <option>대한민국 +82</option>
+                                            <option>미국 +1</option>
+                                            </select><br/>
+                                    <input id=accountboxs type="text" placeholder="전화번호를 입력해 주십시오."> <input id=buttone_num type="button" value="발송" onclick="alert('인증번호를 발송 하였습니다.')"><br/>
+                                    <input id=accountbox1 type="text" placeholder="인증 번호를 입력해 주세요."> <br/><br/><br/>
+                                    <input id=buttone_go type="button" value="가입하기" onclick="alert('축하합니다. 소녀시대 공식팬클럽에 가입 되었습니다!')">
+                            <br/>
+                            <br/><br/>
+                            <a href="index.html">index</a>
+
+
+
                                     
 
                     </form>
@@ -115,7 +182,6 @@
                 </div>
         </header>
         <footer>
-
         </footer>
     </body>
 </html>
