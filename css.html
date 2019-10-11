@@ -4,11 +4,96 @@
     <title>CSS</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="./default.css" />
+    <style>
+    #embeded_target{
+        color:green;
+    }
+    </style>
 
 </head>
 <body>
     <div id="external_target">익스터널 방식 뽑아쓰기</div>
+    <div id="embeded_target">앰베디드 방식</div>
+    <div style="color:blue;">인라인방식</div>
+    <style>
+    /*전체 선택자 '*'모양을 사용함*/
+    /*요소(element) 선택자*/
+    b{color:red;}
+    .c_name{color:blue;}
+    #i_name{color:violet;}
+    </style>
+    전체선택자
+    <b>볼드체</b>
+    <div class="c_name">클래스 선택자</div>
+    <div id="i_name">아이디 선택자</div>
+    <br>
 
+    <style>
+        /*가상 요소 선택자*/
+        #virtual_target:before{
+            content:"*";
+        }
+        #virtual_target:after{
+            content:"*";
+        }
+        #virtual_target:first-letter{
+            font-size: 150px;
+        }
+        #virtual_target:first-line{
+            color:pink;
+        }
+    </style>    
+    <div id="virtual_target">가상 요소 선택자 가상 요소 선택자<br>
+            가상 요소 선택자 가상 요소 선택자 가상 요소 선택자<br>
+            가상 요소 선택자 가상 요소 선택자 가상 요소 선택자<br>
+            가상 요소 선택자 가상 요소 선택자 가상 요소 선택자<br>
+    </div>
+    <style>
+        .virtual_class:first-child{
+                color:rgb(89, 228, 77);
+        }
+        .virtual_class:last-child{
+                color:darkgreen;
+        }
+        .virtual_class:nth-child(2){
+                color:rgb(211, 144, 43);
+        }
+        a:link{color:yellow;}
+        a:visited{color:rgb(72, 87, 199);}
+        a:hover{color:rgb(23, 135, 29);}
+        a:active{color:#ed7947;}
+        a:focus{color:rgb(189, 45, 155);}
+    </style>
+    <div> <!--대괄호, 부모의 역활을 함-->
+    <div class="virtual_class">가상 클래스 선택자</div><!--중괄호, 자식의 역활을 함-->
+    <div class="virtual_class">가상 클래스 선택자</div>
+    <div class="virtual_class">가상 클래스 선택자</div>
+    <div class="virtual_class">가상 클래스 선택자</div>
+    </div>
+    <br>
+    <a href="#">링크 버튼</a>
+
+    <br>
+
+    <style>
+        /*하위 선택자는 띄어쓰기를 함*/
+        div li{color: green;}
+        /*자식 선택자는 부등호를 사용*/
+        div>li{text-decoration: underline;}
+        /*선택자 조합*/
+        ul,li{font-weight: bold;}
+    </style>
+    <div>
+         <ul>
+            <li>리스트1</li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+            <li>리스트4</li>
+        </ul>
+    </div>
+
+
+    
 </body>
 
 </html>
