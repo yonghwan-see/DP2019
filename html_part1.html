@@ -9,7 +9,7 @@
 
     <body>
         <article>
-        <div style=background:rgba(0, 0, 255, 0) color:black; padding:20px; text-align: left>
+        <div style=background:rgba(255,255,255,0.15) color:black; padding:20px; text-align: left>
         <h1>태연 's... one 콘서트 선예매 안내</h1>
         <hr/>
         <img src="media/concert_poster.jpg"></img>
@@ -19,7 +19,7 @@
         <a>가입은 <a href="form_index.html" target="_blank"><span style="color:pink">이쪽</span></a>에서 진행해 주십시오.</a>
         </div>
         </article>
-        <br>
+    <br>
         <article>
         <nav style="  background:rgba(255,255,255,0.15); color:black; padding:20px; text-align: left">
             <ul class="nav-container">
@@ -34,7 +34,7 @@
             
         </nav>
         </article>
-        <br>
+    </br>
 
         <article>
         <div style="  background:rgba(255,255,255,0.15); color:black; padding:20px; text-align: left">
@@ -64,7 +64,7 @@
             </li>
         </ol>
         </div>
-        <br>
+    </br>
         <div style="  background:rgba(255,255,255,0.15); color:black; padding:20px; text-align: left;
         ;">
         <h3 id=list1>티켓 배송 안내</h3>
@@ -92,7 +92,7 @@
                         </li>
                     </ul>
             </dt>
-        <br>
+        </br>
             <li>
                 티켓 회수처
                 <dt>
@@ -107,7 +107,7 @@
         </ul>
         </div>
         </article>
-        <br>
+    </br>
         <article>
             
         <div style="  background:rgba(255,255,255,0.15); color:black; padding:20px; text-align: left">
@@ -231,7 +231,7 @@
         <div style="background:rgba(255,255,255,0.15); color:black; padding:20px; text-align: left">
                 <h3 id=list4>콘서트 세트리스트 소개</h3> </br>
                 <video controls autoplay muted>
-                        <source src="media/taeyeon_khino.mp4" type="video/mp4">
+                        <source src="media/taeyeon_khino.mp4" type="video/mp4"></source>
                     </video>
 
                 <br>
@@ -315,51 +315,51 @@
                 </ol>          
                 <h6><u>밑줄</u>친 곡 들은 10월 23일 발매되는 태연의 정규 2집 앨범 Purpose에서 들어보실수 있습니다.</h6>
                  </div>
-                </br>
+                <br>
                 <article>
                 <div style=" background:rgba(255,255,255,0.15); color:black; padding:20px; text-align: left">
                 <h3 id=list5>콘서트 선공개 콘텐츠</h3>
-                <h4>선공개 이미지</h4>
+                <h4>선공개 화보 이미지</h4>
                 <img src="media/concert_1_out.png"></img>
 
-                <h4>선공개 곡</h4>
+                <h4>선공개 곡 (Here I Am)</h4>
                 <audio controls>
-                        <source src="01 Here I Am (Live).mp3" type= "audio/mpeg"/>
+                        <source src="media/01 Here I Am (Live).mp3" type= "audio/mpeg"/>
                     </audio>
                 </div>
                 </article>
                 <br>
                 <article>
                     <div style=" background:rgba(255,255,255,0.15); color:black; padding:20px; text-align: left">
-                        <h3>콘서트 로고</h3>
-                        <canvas id="myCanvas"></canvas>
-        <script>
-            var canvas = document.getElementById("myCanvas"); //myCanvas라는 이름의 canvas element를 받아옵니다.
-            var ctx = canvas.getContext("2d"); //2D canvas를 생성합니다.
-            ctx.fillStyle = "#FF0000"; //색을 지정합니다.
-            
-            ctx.fillRect(25, 25, 100, 100); //채움 사각형
-            ctx.clearRect(45, 45, 60, 60); //사각형태로 지우기
-            ctx.strokeRect(50, 50, 50, 50); //윤곽 사각형
-            
-            ctx.fillStyle = "#000000";
-            ctx.beginPath(); //선그리기 시작
-            ctx.moveTo(65, 75); //펜 들어 움직이기
-            ctx.lineTo(90, 95); //선 그으며 움직이기
-            ctx.lineTo(90, 55);
-            ctx.fill(); //내부 채우기
+
+
+                        <img id="logo" width="1" height="1" src="media/logo.png" alt="The Scream" ></img>
+                        <canvas id="myCanvas" width="100" height="100" style="border:1px solid #d3d3d3;">
+                        Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+
+                        <script>
+                        window.onload = function() {
+                         var c = document.getElementById("myCanvas");
+                         var ctx = c.getContext("2d");
+                         var img = document.getElementById("logo");
+                         ctx.drawImage(img, 10, 10);
+}
+</script>
+
+
+
             </script>
                     </div>
                 </article>
 
         </article>
     <hr/>
-    <p>Copyright© 2019 <a href="https://ticket.yes24.com" target="_self"> yes24 </a>All rights reserved.</p>
+    
 
    
     </body>
     <footer>
-            <br/>
-            <a href="index.html">index</a>
+            <p>Copyright© 2019 <a href="https://ticket.yes24.com" target="_self"> yes24 </a>All rights reserved.</p>
     </footer>
 </html>
