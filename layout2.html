@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>layout2</title>
+        <meta charset="utf-8">
+        <style>
+            header{
+            background-color:#02918c;
+            color: aliceblue;
+            }
+
+            #logo_back{
+                color:yellow;
+            }
+
+            header>nav>ul>li{
+                float:left;
+                list-style: none;
+                padding : 0px 10px;
+            }
+            .clear{clear:both; height:0; overflow:hidden;} 
+
+            .float_left{float: left;}
+            .float_right{float:right;}
+            header>h1{
+                margin:0px;
+            }
+
+            #main_visual{
+            height:400px;
+            background-image:url("layout2/layout2_visual.jpg");
+            background-size:100% auto;
+            background-repeat:no-repeat;
+            background-color:black;
+            background-position:50% 50%; /*가로px 세로px 50은 그림기준 가운데를 말함*/
+            }
+
+
+
+
+
+        </style>
+    </head>
+    
+    <body>
+        <div id="wrap">
+            
+            <header>
+                <h1 class="float_left">
+                
+                    <span>MY</span> <span id="logo_back">FOLIO</span> 
+                    <!--div,span은 의미없이 써도 되는 태그들-->
+                </h1>
+                
+                <nav class="float_right">
+                    <ul>
+                        <li>HOME</li>
+                        <li>ABOUT ME</li>
+                        <li>SERVICE</li>
+                        <li>MY WORK</li>
+                        <li>CONTENT ME</li>
+                        <div class="clear"></div>
+                    </ul>
+                    
+                </nav>
+                <div class="clear"></div>
+            </header>
+
+            <div id="main_visual"></div>
+            <div>content1</div>
+            <div>content2</div>
+        </div>
+    </body>
+</html>
